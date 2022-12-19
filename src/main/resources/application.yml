@@ -2,7 +2,7 @@ server:
   port: 8080
 spring:
   application:
-    # 应 用的名称可选
+    # 应用的名称可选
     name: IdeaProjects
   datasource:
     druid:
@@ -15,7 +15,9 @@ spring:
     port: 6379
     password:
     database: 0
-
+  cache:
+    redis:
+      time-to-live: 1800000
 mybatis-plus:
   configuration:
     #在映射实体或者属性时，将数据库中表名和字段名中的下划线去掉，按照驼峰命名法映射
