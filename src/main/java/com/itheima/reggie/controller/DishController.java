@@ -207,5 +207,11 @@ public class DishController {
 
         return R.success(dishDtoList);
     }
+    @PostMapping("/status/{status}")
+    public R<String> status(@PathVariable("status") Integer status,Long ids){
+        log.info("status:{}",status);
+        log.info("ids:{}",ids);
+        return null;
+    }
 
 }
